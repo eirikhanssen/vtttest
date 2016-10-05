@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/mediaelement/build/mediaelement-and-player.min.js"></script>
+		<link rel="stylesheet" href="libs/mediaelement/build/mediaelementplayer.css" />
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h2>Audio in audio element with tracks [Norwegian]</h2>
+		<audio controls="controls" poster="audioposter.png">
+			<source src="test-no.ogg" type="audio/ogg">
+  			<track kind="subtitles" label="Norske undertekster" src="test-no.vtt" srclang="no" default></track>
+  			<track kind="subtitles" label="English subtitles" src="test-en.vtt" srclang="en"></track>
+  			<p>Your browser unfortunately doesn't support the audio element</p>
+		</audio>
+
+		<h2>Audio in video element with tracks [Norwegian]</h2>
+		<video controls="controls" poster="videoposter.png">
+			<source src="test-no.ogg" type="audio/ogg">
+			<track kind="subtitles" label="Norske undertekster" src="test-no.vtt" srclang="no" default></track>
+  			<track kind="subtitles" label="English subtitles" src="test-en.vtt" srclang="en"></track>
+			<p>Your browser unfortunately doesn't support the video element</p>
+		</video>
+
+		<h2>Audio in audio element with tracks [English]</h2>
+		<audio controls="controls" poster="audioposter.png">
+			<source src="test-no.ogg" type="audio/ogg">
+			<track kind="subtitles" label="English subtitles" src="test-en.vtt" srclang="en" default></track>
+  			<track kind="subtitles" label="Norske undertekster" src="test-no.vtt" srclang="no"></track>
+  			<p>Your browser unfortunately doesn't support the audio element</p>
+		</audio>
+
+		<h2>Audio in video element with tracks [English]</h2>
+		<video controls="controls" poster="videoposter.png">
+			<source src="test-no.ogg" type="audio/ogg">
+			<track kind="subtitles" label="English subtitles" src="test-en.vtt" srclang="en" default></track>
+			<track kind="subtitles" label="Norske undertekster" src="test-no.vtt" srclang="no"></track>
+  			<p>Your browser unfortunately doesn't support the video element</p>
+		</video>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+- prøv å vise audio tracks som tenkt i html5
+	- ff støtter ikke cues i audio element!
+- prøv å spille audio tracks med video element
+
+ffmpeg -i test-no.ogg -acodec aac -strict experimental test-no.m4a
+ffmpeg -i test-en.ogg -acodec aac -strict experimental test-en.m4a
